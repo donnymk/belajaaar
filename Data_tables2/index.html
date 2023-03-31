@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Data Tables Dengan Bootstrap | Jin Toples Programming</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">	
+        <link rel="stylesheet" href="css/dataTables.bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center">Jin Toples Programming</h2>
+            <h2 class="text-center">Data Tables Dengan Bootstrap</h2>
+            <div class="box-body table-responsive">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Rendering engine</th>
+                            <th>Browser</th>
+                            <th>Platform(s)</th>
+                            <th>Engine version</th>
+                            <th>CSS grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 4.0</td>
+                            <td>Win 95+</td>
+                            <td> 4</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>Trident</td>
+                            <td>Internet
+                                Explorer 5.0</td>
+                            <td>Win 95+</td>
+                            <td>5</td>
+                            <td>C</td>
+                        </tr>
+                                           
+                    </tbody>
+                    
+                </table>
+            </div><!-- /.box-body -->
+        </div>	
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap.js"></script>	
+        <script type="text/javascript">
+            $(function() {
+                $('#example1').dataTable();
+            });
+        </script>
+    </body>
+</html>

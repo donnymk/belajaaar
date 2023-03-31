@@ -1,0 +1,14 @@
+-= Membuat Laporan Excel dengan PHP =-
+
+Dibuat oleh	: Achmad Solichin
+Situs 		: http://achmatim.net
+Tanggal 	: 7 Februari 2013
+
+Dalam pembuatan sistem atau aplikasi berbasis web, seringkali diperlukan laporan (report) untuk berbagai keperluan. Pada umumnya, laporan dapat disajikan dalam 3 (tiga) bentuk yaitu laporan HTML, laporan bentuk PDF dan laporan Excel atau Spreadsheet. Bentuk laporan HTML merupakan bentuk laporan yang ditampilkan secara langsung di halaman web, dapat dibuat dengan perintah HTML dan CSS. Sedangkan laporan dalam bentuk PDF, pada umumnya disajikan sebagai format siap cetak atau siap disajikan. Tentang bagaimana membuat laporan PDF dengan PHP, silahkah baca tutorial mengenai Step by Step membuat laporan PDF. 
+Dalam tutorial ini, akan dibahas bentuk laporan yang ketiga yaitu laporan dalam bentuk Excel atau Spreadsheet. Namun dalam bentuk yang sangat sederhana. Tutorial ini terbatas pada pembahasan untuk membuat dan menuliskan data ke dalam file Excel dengan format .xls yang kompatibel dengan Microsoft Excel, Open Office, Libre Office dan program pengolah spreadsheet lainnya. Masih dalam bentuk sederhana juga, tutorial ini akan diakhiri dengan contoh laporan (report) dimana data diambil dari database MySQL.
+
+Selengkapnya di: http://achmatim.net/2013/02/07/membuat-laporan-excel-dengan-php/
+
+Dapatkan tutorial komputer lainnya dengan mengunjungi situs http://achmatim.net
+
+Maju terus ilmu pengetahuan Indonesia!

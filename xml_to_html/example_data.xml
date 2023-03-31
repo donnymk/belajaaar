@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<paintings>
+	<painting id="painting_001">
+		<title>Wheatfield with Crows
+		</title>
+		<artist class="post_impressionist">Vincent Willem van Gogh
+		</artist>
+		<date>1890
+		</date>
+		<medium>Oil on canvass
+		</medium>
+		<movement>post-Impressionist
+		</movement>
+		<more_info><![CDATA[<a href="http://en.wikipedia.org/wiki/Van_Gogh" title="Find out more about the artist at Wikipedia">Wikipedia</a>.]]>
+		</more_info>
+	</painting>
+	<painting id="painting_002">
+		<title>Leonardo da Vinci - Self-portrait
+		</title>
+		<artist class="high_renaissance">Leonardo da Vinci
+		</artist>
+		<date>c. 1512
+		</date>
+		<medium>Red chalk on paper
+		</medium>
+		<movement>High Renaissance
+		</movement>
+		<more_info><![CDATA[<a href="http://en.wikipedia.org/wiki/Leonardo_da_Vinci" title="Find out more about the artist at Wikipedia">Wikipedia</a>.]]>
+		</more_info>
+	</painting>
+		<painting id="painting_003">
+		<title>Woman with a Hat
+		</title>
+		<artist class="modernism">Henri Matisse
+		</artist>
+		<date>1905
+		</date>
+		<medium>Oil on canvas
+		</medium>
+		<movement>Modernism
+		</movement>
+		<more_info><![CDATA[<a href="http://en.wikipedia.org/wiki/Henri_Matisse" title="Find out more about the artist at Wikipedia">Wikipedia</a>.]]>
+		</more_info>
+	</painting>
+	<painting id="painting_004">
+		<title>Ge Zhichuan Relocating
+		</title>
+		<artist class="not_known">Wáng Méng
+		</artist>
+		<date>14th century
+		</date>
+		<medium>Hanging Scroll, ink and colour on paper
+		</medium>
+		<movement>N/A
+		</movement>
+		<more_info><![CDATA[<a href="http://en.wikipedia.org/wiki/Wang_Meng_%28artist%29" title="Find out more about the artist at Wikipedia">Wikipedia</a>.]]>
+		</more_info>
+</painting>
+</paintings>

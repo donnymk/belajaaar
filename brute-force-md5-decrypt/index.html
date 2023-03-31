@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MD5 Encryption - Kecerdasan Buatan UMJ Sore :. Ahyar</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.22" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div id="container">
+		<h2>Enkripsi dan Dekrip MD5</h2>
+		<input type="text" class="str"/>
+		<input type="button" value="Encrypt Me!" id="tbl-enkrip" class="tbl"/>
+		<input type="button" value="Decrypt Me!" id="tbl-dekrip" class="tbl"/>
+	<div id="result-bar">
+		Hasil :<br/>
+		<span class="hasil"></span>
+	</div>
+	<a href="http://www.ayayank.com" title="Mengenkripsi dan mendekripsi md5">ayayank.com</a>
+	</div>
+	<!-- manipulasi AJAX -->
+	<script>
+		$(document).ready(function(){
+		$('#tbl-enkrip').click(function(){
+			var string = $('.str').val();
+			$('.hasil').html('<img src="img/loader.gif"> Loading..');
+			$('.hasil').load('encrypt.php?str='+string);
+			});
+		$('#tbl-dekrip').click(function(){
+			var string = $('.str').val();
+			$('.hasil').html('<img src="img/loader.gif"> Loading..');
+			$('.hasil').load('brute-force.php?md5='+string);
+			});
+		});
+	</script>
+	<!-- Akhir manipulasi AJAX -->
+</body>
+</html>

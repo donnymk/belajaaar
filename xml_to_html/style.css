@@ -1,0 +1,101 @@
+/*
+Gary Hollands - solriche - 2009 - Default Template Stylesheet
+This stylesheet is available under the terms of the GNU General Public License as published by
+the Free Software Foundation - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-family: "lucida grande", "lucida sans unicode", arial, "bitstream vera sans", sans-serif;/*mac,windoze,linux*/
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,255);
+	line-height: 1.5;
+}
+/*-------------------------Page layout boxes etc-------------------------*/
+#container {
+	width: 98%;/*48em or 98%*/
+	margin: 0 auto 0 auto;
+}
+#masterbox {
+	width: 98%;
+	margin: 0 auto 2em auto;
+}
+#content{
+	margin-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#content p{
+	font-size: 80%;
+	margin: 0 0 0.25em 0;
+}
+#content .painting_record{
+	margin: 0 0 0.5em 0;
+}
+#content .painting_record p{
+	margin: 0;
+}
+#content .category{
+	font-weight: bold;
+}
+#content .inset{
+	margin-left: 1em;
+}	
+#content ul{
+	margin: 0 0 0 2em;
+}
+/*-----------------------------General CSS-----------------------------*/
+a{
+	outline: none;
+}
+/*------Colors are chosen with consideration for those with visibility disabilities such as deuteranomaly.------*/
+a:link{
+	color: rgb(0,28,112);
+	text-decoration: underline;
+}
+a:visited{
+	color: rgb(112,101,0);
+	text-decoration: underline;
+}
+a:hover{
+	color: rgb(112,23,0);
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+	color: rgb(59,116,179);
+}
+	h1{font-size: 130%;}
+	h2{font-size: 100%;}
+	h3{font-size: 90%;}
+	h4{font-size: 90%;}
+	h5{font-size: 90%;}
+	h6{font-size: 85%;}
+/*------Font Family choices, these are the most common and/or close matching fonts across the various operating systems.------*/
+.serif{
+	font-family: georgia, "DejaVu Serif", "bitstream vera serif", serif;/*mac/windoze,linux*/
+}
+.fantasy{
+	font-family: papyrus, impact, fantasy;/*mac/windoze,linux*/
+}
+.cursive{
+	font-family: "Comic Sans MS", cursive;/*mac/windoze/linux*/
+}
+pre,code{
+	font-family: "lucida grande", "lucida sans unicode", arial, "bitstream vera sans", sans-serif;
+	color: rgb(80,80,80);
+}
+pre{
+	font-size: 80%;
+	margin: 0.25em 0 0 0;
+}
+pre .wrap{
+	white-space: normal;
+}
+abbr{
+	border-bottom: dotted 1px rgb(0,0,0);
+	cursor: help;
+}
+img{
+	border: 0;
+}

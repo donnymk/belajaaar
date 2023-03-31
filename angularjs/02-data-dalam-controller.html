@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html ng-app="mApp">
+
+<head>
+<title>Data di dalam controller</title>
+</head>
+
+<body>
+
+<div ng-controller="cData">
+    <p>Bahan Studi: {{ bahasa }}</p>
+    <p>Tingkat: {{ tingkat }}</p>
+    <p>Peserta:
+        <ul>
+            <li ng-repeat="p in pelajar">{{ p.nama + " (" + p.umur + ")" }}</li>
+        </ul>
+    </p>
+</div>
+
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/02.js"></script>
+</html>

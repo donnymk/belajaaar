@@ -1,0 +1,10 @@
+<div class="badge">{{ pesan }}</div><br><br>
+
+<table class="table table-striped">
+    <tr>
+        <th>GuruID</th><th>NIP</th><th>Nama</th><th>Alamat</th><th>Strata</th>
+    </tr>
+    <tr ng-repeat="dg in dataguru">
+        <td>{{ dg.guruid }}</td><td>{{ dg.noguru }}</td><td>{{ dg.nama }}</td><td>{{ dg.alamat }}</td><td>{{ dg.strata }}</td>
+    </tr>
+</table>

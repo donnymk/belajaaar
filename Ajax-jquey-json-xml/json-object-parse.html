@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+
+<body>
+	<div id="kata"></div>
+	<script>
+		var jsonstr='{"nama":"Desrizal", "umur":28, "teman":["Nurmi", "Sarah", "Albert"]}';
+		var george=JSON.parse(jsonstr); //convert JSON string into object
+		
+		document.getElementById("kata").innerHTML = george.umur;
+		//alert(george.umur) //alerts 28
+	</script>
+</body>
+</html>

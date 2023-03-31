@@ -1,0 +1,18 @@
+Petunjuk Instalasi Datatables Serverside Processing :
+
+1. Buka xampp bila tidak ada silahkan download di www.apachefriends.org
+2. Start apache dan mysql di control panel xampp
+3. Extract file data.zip dan simpan ke dalam folder htdocs => c:/xampp/htdocs
+4. Buka Browser kemudian ketikan di address bar => localhost/phpmyadmin
+5. Buat sebuah database dengan nama mahasiswa
+6. Import / Upload database yang ada di folder DB dari file data.zip yang sudah di extract tadi
+7. Buka di browser dengan mengetikan di adddress bar => localhost/data
+8. Anda sudah berhasil menginstall datatables serverside processing
+
+Data tables processing sangat bermanfaat untuk mengolah data dengan puluhan ribu record dengan load data
+yang cepat, hal ini tentunya mempermudah user tanpa harus menunggu load ribuan data di server. Silahkan di coba
+dan dipraktekan.
+
+Dapatkan tutorial yang lain di www.hakkoblogs.com
+
+Happy Programming.

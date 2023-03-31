@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<title>ShowPasswordCheckbox Demo</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!--<link rel="stylesheet" type="text/css" href="demo.css" media="screen, projection" />-->
+	<script type="text/javascript" src="ShowPasswordCheckbox.js"></script>
+	
+</head>
+
+<body>
+
+
+	<form id="demo-form" action="#">
+    	<fieldset>
+			<label for="demo-field"><strong>This is a show-password field.</strong> Type a value, then click the checkbox to see it plain:</label>
+			<input type="password" class="password" id="demo-field" name="pword" />
+            <input type="password" class="password" id="demo-field" name="pword" />
+        </fieldset>
+	</form>
+	<script type="text/javascript">
+
+		//add a show password checkbox to the demo-field
+		new ShowPasswordCheckbox(document.getElementById("demo-field"));
+
+		//test the submitted value
+		document.getElementById('demo-form').onsubmit = function()
+		{
+			alert('pword = "' + this.pword.value + '"');
+			return false;
+		};
+
+	</script>
+
+
+</body>
+</html>

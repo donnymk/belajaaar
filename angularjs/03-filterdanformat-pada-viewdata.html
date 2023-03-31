@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html ng-app="mApp">
+
+<head>
+<title>Filter dan format pada view data</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+
+<div ng-controller="cAturData">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td>Nama</td><td>Semester</td><td>Biaya SKS</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="p in peserta | orderBy:'nama'">
+            <td>{{ p.nama | uppercase }}</td><td>{{ p.semester }}</td><td>{{ p.biayasks | currency }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/03.js"></script>
+</html>

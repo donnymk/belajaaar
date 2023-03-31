@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html ng-app="mApp">
+<head>
+<title>Data binding dan fungsi</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+<body>
+
+<div class="container" ng-controller="cPerhitungan">
+    <p>
+        <label>Bilangan A</label>
+        <input type="text" class="form-control" id="txtBilA" ng-model="bilA" />
+    </p>
+    <p>
+        <label>Bilangan B</label>
+        <input type="text" class="form-control" id="txtBilB" ng-model="bilB" />
+    </p>
+    <p>
+        <button class="btn btn-warning" ng-click="prosesJumlah()">Proses!</button>
+        <label>Hasil: {{ hasil }}</label>
+    </p>
+</div>
+
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/04.js"></script>
+</html>

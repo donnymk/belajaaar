@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>Galeri Foto dengan JQuery dan Zoomooz</title>
+		<script type="text/javascript" src="zoomooz/lib/jquery-1.4.4.js"></script>
+		<script type="text/javascript" src="zoomooz/lib/sylvester.js"></script>
+		<script type="text/javascript" src="zoomooz/js/purecssmatrix.js"></script>
+		<script type="text/javascript" src="zoomooz/js/jquery.animtrans.js"></script>
+		<script type="text/javascript" src="zoomooz/js/jquery.zoomooz.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$(".zoom").click(function(evt) {
+				evt.stopPropagation();
+				$(this).zoomTo();
+			});
+			$(window).click(function(evt) {
+				evt.stopPropagation();
+				$("body").zoomTo();
+			});
+			$("body").zoomTo();
+		});
+		</script>
+		<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		 
+		/*Text Styles*/
+		 
+		#headline {
+			text-align: center;
+			margin: 20px 0;
+		}
+		 
+		h1 {
+			font-family: 'Arvo', Georgia, Times, serif;
+			font-size: 50px;
+			line-height: 65px;
+		}
+		 
+		p {
+			font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+			font-size: 13px;
+			line-height: 25px;
+		}
+		/*Gallery Styles*/
+ 
+		#gallery {
+			width: 720px;
+			height: 370px;
+			margin: 0 auto;
+			padding: 10px;
+			background: #383131;
+		}
+		
+		/*List Styles*/
+		ul {
+			list-style-type: none;
+			position: absolute;
+			width: 720px;
+		}
+		 
+		#gallery ul li {
+			float: left;
+			margin: 10px;
+			background: white;
+			height: 100px;
+			width: 100px;
+		}
+		 
+		#gallery ul li:hover {
+			border: 3px solid white;
+			margin: 7px;
+		}
+		 
+		#gallery ul li img{
+			height: 100px;
+			width: 100px;
+		}
+
+		</style>
+	</head>
+	<body>
+ 
+		<div id="headline">
+			<h1>Galeri Foto</h1>
+			<p>Klik pada gambar untuk memperbesar foto dan klik di luar foto untuk memperkecilnya. Keren kan?</p>
+		</div>
+ 
+		<div id="gallery" class="zoom">
+			<ul>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/1"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/2"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/3"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/4"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/5"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/6"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/7"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/8"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/9"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/people/10"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/1"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/2"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/3"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/4"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/5"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/6"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/7"/></li>
+				<li class="zoom"><img src="http://lorempixum.com/600/600/nature/8"/></li>
+			</ul>
+		</div>
+		<div id="headline">
+			<p>Semua gambar di atas diambil dari situs http://lorempixum.com. 
+			Contoh dibuat berdasarkan tutorial dari situs <a href="http://designshack.co.uk/?p=20521" target="_blank">DesignsHack</a> dengan beberapa penyesuaian. 
+			Dapatkan berbagai tutorial komputer lainnya secara gratis, hanya di <a href="http://achmatim.net">Achmatim.Net</a></p>
+		</div>
+	</body>
+
+</html>

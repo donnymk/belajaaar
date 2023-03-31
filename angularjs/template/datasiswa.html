@@ -1,0 +1,10 @@
+<div class="badge">{{ pesan }}</div><br><br>
+
+<table class="table table-striped">
+    <tr>
+        <th>SiswaID</th><th>No Siswa</th><th>Nama</th><th>Alamat</th><th>Thn Masuk</th><td>Action</td>
+    </tr>
+    <tr ng-repeat="ds in datasiswa">
+        <td>{{ ds.siswaid }}</td><td>{{ ds.nosiswa }}</td><td>{{ ds.nama }}</td><td>{{ ds.alamat }}</td><td>{{ ds.thnmasuk }}</td><td><a href="#/siswa/{{ ds.siswaid }}"><button>Detail</button></a></td>
+    </tr>
+</table>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html ng-app="mApp">
+<head>
+<title>Input ke database lewat proses ajax</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+<body>
+
+<div class="container-fluid" ng-controller="cAjax">
+
+    <p>Data Siswa</p>
+    <hr>
+    <p>
+        <form ng-submit="inputsiswa()">
+        <div class="form-group form-inline">
+            <label>No Siswa</label>
+            <input type="text" ng-model="siswabaru.nosiswa" class="form-control" id="txtNoSiswa" name="txtNoSiswa" required/>
+            <label> Nama</label>
+            <input type="text" ng-model="siswabaru.nama" class="form-control" id="txtNamaSiswa" name="txtNamaSiswa" required/>
+            <label> Alamat</label>
+            <input type="text" ng-model="siswabaru.alamat" class="form-control" id="txtAlamat" name="txtAlamat" required/>
+            <label> Tahun Masuk</label>
+            <input type="text" ng-model="siswabaru.thnmasuk" class="form-control" id="txtThnMasuk" name="txtThnMasuk" required/>
+            <button type="submit" class="btn btn-info">Tambah Data</button>
+        </div>
+        </form>
+    </p>
+    <p>
+        <table class="table table-striped">
+            <tr>
+                <th>SiswaID</th><th>No Siswa</th><th>Nama</th><th>Alamat</th><th>Thn Masuk</th>
+            </tr>
+            <tr ng-repeat="ds in datasiswa">
+                <td>{{ ds.siswaid }}</td><td>{{ ds.nosiswa }}</td><td>{{ ds.nama }}</td><td>{{ ds.alamat }}</td><td>{{ ds.thnmasuk }}</td>
+            </tr>
+        </table>
+    </p>
+</div>
+
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/07.js"></script>
+</html>

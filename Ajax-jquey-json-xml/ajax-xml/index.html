@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+var drz = buatAjax();
+var url = "data.xml";
+function buatAjax(){
+    if(window.XMLHttpRequest){
+        return new XMLHttpRequest();
+    }else if(window.ActiveXObject){
+        return new ActiveXObject("Microsoft.XMLHTTP");
+    }
+}
+function ambilXMLDoc(){
+    drz.open("GET",url+"?sid="+Math.random(),true);
+    drz.onreadystatechange = prosesData;
+    drz.send(null);
+}
+function prosesData(){
+    if(drz.readyState == 4){
+        var dtable = document.getElementById( 'tabel' );
+        var nl = drz.responseXML.getElementsByTagName( 'book' );
+        for( var i = 0; i < nl.length; i++ ) {
+            var nli = nl.item( i );
+			
+            var elAuthor = nli.getElementsByTagName( 'author' );
+            var author = elAuthor.item(0).firstChild.nodeValue;
+			
+            var elTitle = nli.getElementsByTagName( 'title' );
+            var title = elTitle.item(0).firstChild.nodeValue;
+			
+            var elTr = dtable.insertRow( -1 );
+			
+            var elAuthorTd = elTr.insertCell( -1 );
+            elAuthorTd.innerHTML = author;
+            var elTitleTd = elTr.insertCell( -1 );
+            elTitleTd.innerHTML = title;
+        }
+    }
+}
+</script>
+</head>
+<body onload=ambilXMLDoc()>
+<table cellspacing="0" cellpadding="3" border=1>
+<tbody id="tabel">
+<tr>
+ <th width="20%">Author</th>
+ <th width="80%">Title</th>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

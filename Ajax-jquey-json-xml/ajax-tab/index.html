@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Ajax Tab</title>
+<script type="text/javascript">
+var ajaxku = buatAjax();
+function init (){
+    var tabs = document.getElementsByClassName('tabs');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].onclick = function (){
+            ambilTabData(this.id);
+        }
+    }
+}
+function ambilTabData(id) {
+    var url;
+    switch(id){
+        case 'tab1' : url = "halaman1.html";break;
+        case 'tab2' : url = "halaman2.html";break;
+        case 'tab3' : url = "halaman3.html";break;
+        case 'tab4' : url = "halaman4.html";break;
+    }
+    ajaxku.open("GET",url,true);
+    ajaxku.onreadystatechange = tampilkanHalaman;
+    ajaxku.send(null);
+}
+function buatAjax(){
+    if(window.XMLHttpRequest){
+        return new XMLHttpRequest();
+    }else if(window.ActiveXObject){
+        return new ActiveXObject("Microsoft.XMLHTTP");
+    }
+}
+function tampilkanHalaman(){
+    if(ajaxku.readyState == 4){
+        var halaman = ajaxku.responseText;
+        document.getElementById("content").innerHTML = halaman;
+    }else{
+        document.getElementById("content").innerHTML = "Loading....";
+    }
+}
+</script>
+<style type="text/css">
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+.tabs {
+    list-style-type: none;
+    width:50px;
+    margin-right:5px;
+    padding:4px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+    border:1px solid #ccc;
+    border-bottom:0;
+    background: white url(shade.gif) top left repeat-x;
+}
+#content {
+    width:500px;
+    height: 250;
+    clear:both;
+    border:1px solid #ccc;
+    padding : 3px
+}
+</style>
+</head>
+<body onload=init()>
+    <li class="tabs" id="tab1">Tab 1</li>
+    <li class="tabs" id="tab2">Tab 2</li>
+    <li class="tabs" id="tab3">Tab 3</li>
+    <li class="tabs" id="tab4">Tab 4</li>
+    <div id="content" style="overflow:auto">
+</div>
+</body>
+</html>

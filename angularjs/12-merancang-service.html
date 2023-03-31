@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html ng-app="mApp">
+<head>
+<title>Menggabungkan ng-route dan ajax</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class=container-fluid>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Nama aplikasi</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#/siswa">Siswa</a></li>
+            <li><a href="#/guru">Guru</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <ng-view></ng-view>
+</div>
+
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/12.js"></script>
+</html>
